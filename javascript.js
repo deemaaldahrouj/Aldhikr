@@ -25,7 +25,8 @@ function cl(obj){
     vd++;
     if(value>=10)
     {alert(" لقد اتممت الذكر تقبل الله")
-     num.textContent=0;}
+     num.textContent=0;
+    value=0;}
     else
     {alert("عذرا انك لم تكمل هدف الذكر و هو 100 تسبيحة على الاقل");
 }
