@@ -51,11 +51,11 @@ var t=0;
 function disp(obj)
 { 
   if(t%2==0)
-{document.getElementById("baqyat").style.display="flex";
+{document.getElementById("baqyat"+ (d.getDay())).style.display="flex";
 obj.style.color="#d35252";
 t++;}
 else
-{document.getElementById("baqyat").style.display="none";
+{document.getElementById("baqyat"+(d.getDay())).style.display="none";
 obj.style.color="rgb(43, 7, 13)";
 t++;}
 
