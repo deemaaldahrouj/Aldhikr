@@ -38,7 +38,7 @@ let vm=0;
 function cl(obj){
     vd++;
     if(value>=10)
-    {alert(" لقد اتممت الذكر تقبل الله")
+    {alert(" لقد اتممت الذكر تقبل الله ❤️")
      num.textContent=0;
     value=0;
      }
