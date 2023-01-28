@@ -15,11 +15,12 @@ let num = document.getElementById("num");
 let value = 0;
 function click11(obj)
  { vIst++;
-   
+  de.textContent="❤️" + vIst;
   value++;
    num.textContent = value;
   if(vIst>=10)
    {obj.style.background="#ffffff";
+   obj.style.color=""
    obj.style.transition="20s";}
    else
    {obj.style.background="#3d2525";
