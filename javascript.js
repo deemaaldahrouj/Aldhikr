@@ -12,41 +12,22 @@ day1.innerHTML=day;
 setup();
 var vIst=0;
 let num = document.getElementById("num");
-let value = 0;
-function click11(obj)
- { vIst++;
-  de.textContent="❤️" + vIst;
-  value++;
-   num.textContent = value;
-  if(vIst>=10)
-   {obj.style.background="#ffffff";
-   obj.style.color=""
-   obj.style.transition="20s";}
-   else
-   {obj.style.background="#3d2525";
-   obj.style.transition="1s";
-   }
-}
-function click1(obj)
- {
-   value++;
-   num.textContent = value;
-   obj.style.background="#c7286a";
-}
 
-let vd=0;
-let vm=0;
-function cl(obj){
-    vd++;
-    if(value>=10)
-    {alert(" لقد اتممت الذكر تقبل الله ❤️")
-     num.textContent=0;
-    value=0;
-     }
-    else
-    {alert("عذرا انك لم تكمل هدف الذكر و هو 100 تسبيحة على الاقل");
-}
-}
+// function click11(obj)
+//  { vIst++;
+//   obj.textContent="❤️" + vIst;
+//   value++;
+//    num.textContent = value;
+//   if(vIst>=10)
+//    {obj.style.background="#ffffff";
+//    obj.style.color=""
+//    obj.style.transition="20s";}
+//    else
+//    {obj.style.background="#3d2525";
+//    obj.style.transition="1s";
+//    }
+// }
+
 
 var t=0;
 function disp(obj)
