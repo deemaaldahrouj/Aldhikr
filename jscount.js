@@ -19,7 +19,7 @@ function click1(obj)
 
 
 function cl(obj){
-    if(value>=10)
+    if(value>=100)
     {alert(" لقد اتممت الذكر تقبل الله ❤️")
     for (const counter of counters) {
       counter.innerHTML=0;
