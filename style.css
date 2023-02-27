@@ -167,7 +167,7 @@ button:focus {
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:center;
     text-align: -webkit-right;
     display: none;
     /* visibility: hidden; */
@@ -175,13 +175,24 @@ button:focus {
 }
 .liststyle{
 
-    margin-top: 20px;
+    /* margin-top: 20px;
     color: rgb(43, 7, 13);
     font-weight: bolder;
     flex-wrap: wrap;
     display: block;
     /* transition-delay: 1s; */
+    /* transition-duration: 0.5s;  */
+    margin-top: 40px;
+    display: flex;
+    color: rgb(43, 7, 13);
+    font-weight: bolder;
+    flex-wrap: nowrap;
+    /* display: block; */
+    /* transition-delay: 1s; */
     transition-duration: 0.5s;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 .style1{
     color: rgb(43, 7, 13);
