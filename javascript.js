@@ -35,10 +35,13 @@ function disp(obj)
   if(t%2==0)
 {document.getElementById("baqyat"+ (d.getDay())).style.display="flex";
 obj.style.color="#d35252";
+
+obj.innerHTML="الباقيات الصالحات&#x25B2;";
 t++;}
 else
 {document.getElementById("baqyat"+(d.getDay())).style.display="none";
 obj.style.color="rgb(43, 7, 13)";
+obj.innerHTML="الباقيات الصالحات&#x25BC;";
 t++;}
 
 }

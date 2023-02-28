@@ -8,7 +8,8 @@ for (const counter of counters) {
   });
   
 }
-    // localStorage.clear();
+if(d.getHours()==0)
+  { localStorage.clear();}
 
 
 
@@ -34,7 +35,7 @@ function click1(obj)
 
 
 function cl(obj){
-    if(window.localStorage.getItem("num")>=10)
+    if(window.localStorage.getItem("num")>=200)
     {alert(" لقد اتممت الذكر تقبل الله ❤️")
     for (const counter of counters) {
       counter.innerHTML=0;
