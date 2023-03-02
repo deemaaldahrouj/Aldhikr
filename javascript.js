@@ -36,12 +36,12 @@ function disp(obj)
 {document.getElementById("baqyat"+ (d.getDay())).style.display="flex";
 obj.style.color="#d35252";
 
-obj.innerHTML="&#x1F783;الباقيات الصالحات";
+obj.innerHTML="<img src='Wingdinghs3.png'></img> الباقيات الصالحات";
 t++;}
 else
 {document.getElementById("baqyat"+(d.getDay())).style.display="none";
 obj.style.color="rgb(43, 7, 13)";
-obj.innerHTML="&#x1F782;الباقيات الصالحات";
+obj.innerHTML="<img src='Winsgdings3.png'></img> الباقيات الصالحات";
 t++;}
 
 }
@@ -58,6 +58,14 @@ t++;}
 
 // }
 
+window.onload = function() {
+	var d=document.querySelectorAll(".material-icons");
+	//var image = document.getElementById("baqyat"+(d.getDay()));
+	for (var i = 0; i < d.length; i++) {
+		d[i].innerHTML = "<img src='Winsgdings3.png'></img> الباقيات الصالحات";
+	  }
+	}
+  
 
 function daily()
 {
