@@ -86,7 +86,7 @@ function daily()
         document.getElementById("id5").style.display="flex";
 			break;
       case 5:
-        document.getElementById("id6").style.display="flex";
+        document.getElementById("id5").style.display="flex";
 			break;
       case 6:
         document.getElementById("id7").style.display="flex";
