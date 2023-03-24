@@ -9,37 +9,52 @@ for (const counter of counters) {
   
 }
 
+let x=document.getElementById("reset");
 
-// Get the current date
-var now = new Date();
+x.addEventListener("click",function(){
 
-// Set the target time for clearing Local Storage to midnight
-var targetTime = new Date(
-  now.getFullYear(),
-  now.getMonth(),
-  now.getDate() + 1, // Add one day to get tomorrow's date
-  0, // Hours
-  0, // Minutes
-  0 // Seconds
-);
+for(const counter of counters){
 
-// Calculate the number of milliseconds until the target time
-var timeUntilClear = targetTime.getTime() - now.getTime();
-
-// Set up a timeout function to clear Local Storage at the target time
-setTimeout(function() {
-  localStorage.clear();
-}, timeUntilClear);
+  counter.innerHTML=0;
+  document.getElementById("b").innerHTML="اتممت الذكر";
+  document.getElementById("reset").innerHTML="reset";
+  localStorage.setItem(counter.id, counter.innerHTML);
+}
+  
+});
 
 
 
+// // Get the current date
+// var now = new Date();
+
+// // Set the target time for clearing Local Storage to midnight
+// var targetTime = new Date(
+//   now.getFullYear(),
+//   now.getMonth(),
+//   now.getDate() + 1, // Add one day to get tomorrow's date
+//   0, // Hours
+//   0, // Minutes
+//   0 // Seconds
+// );
+
+// // Calculate the number of milliseconds until the target time
+// var timeUntilClear = targetTime.getTime() - now.getTime();
+
+// // Set up a timeout function to clear Local Storage at the target time
+// setTimeout(function() {
+//   localStorage.clear();
+// }, timeUntilClear);
 
 
 
 
 
 
-//localStorage.clear();
+
+
+
+// localStorage.clear();
 
 
 
