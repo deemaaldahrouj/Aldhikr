@@ -20,7 +20,8 @@ for(const counter of counters){
   document.getElementById("reset").innerHTML="reset";
   localStorage.setItem(counter.id, counter.innerHTML);
 }
-  
+  document.getElementById("num").innerHTML=0;
+  localStorage.setItem("num",0);
 });
 
 
