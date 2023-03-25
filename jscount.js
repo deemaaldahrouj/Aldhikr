@@ -22,9 +22,8 @@ for(const counter of counters){
 }
   
   localStorage.setItem("num",0);
-  if (window.localStorage.getItem("num")) {
     num.innerHTML =window.localStorage.getItem("num") ;
-  }
+  
   // document.getElementById("num").innerHTML=0;
 });
 
@@ -71,11 +70,11 @@ function click1(obj)
    obj.style.background="#c7286a";
    window.localStorage.setItem("num",num.textContent);
   //  window.localStorage.setItem("value",value);
+ 
+  }
   if (window.localStorage.getItem("num")) {
     num.innerHTML =window.localStorage.getItem("num") ;
   }
-  }
-
   
 
 
