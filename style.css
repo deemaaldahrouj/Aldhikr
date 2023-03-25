@@ -150,6 +150,7 @@ button:focus {
     
   justify-content: space-around;
   margin-top: 30%;
+
 }
 .deema{
 
@@ -225,7 +226,12 @@ transition-duration: 1s;
 background-color: rgba(255, 2, 53, 0.678);
 color: #3f2424;
 }
+#reset{
 
+  background-color: rgb(2 58 90 / 35%);
+box-shadow: #2e2d9269;
+
+}
 .counter1{
 
     /* height: 30px; */
@@ -238,6 +244,7 @@ color: #3f2424;
     font-weight: bold;
     transition: 1s;
  font-family: 'Roboto' ,sans-serif;
+ margin-left: 10px;
 }
 .counter1:hover{
 
