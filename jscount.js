@@ -3,6 +3,7 @@ for (const counter of counters) {
   counter.addEventListener("click", function() {
     this.innerHTML= parseInt(this.innerHTML) + 1;
     document.getElementById("b").innerHTML="اتممت الذكر";
+    document.getElementById("reset").innerHTML="reset";
    console.log(localStorage.setItem(this.id, this.innerHTML))
     localStorage.setItem(this.id, this.innerHTML);
   });
@@ -26,36 +27,6 @@ for(const counter of counters){
   
   // document.getElementById("num").innerHTML=0;
 });
-
-
-
-// // Get the current date
-// var now = new Date();
-
-// // Set the target time for clearing Local Storage to midnight
-// var targetTime = new Date(
-//   now.getFullYear(),
-//   now.getMonth(),
-//   now.getDate() + 1, // Add one day to get tomorrow's date
-//   0, // Hours
-//   0, // Minutes
-//   0 // Seconds
-// );
-
-// // Calculate the number of milliseconds until the target time
-// var timeUntilClear = targetTime.getTime() - now.getTime();
-
-// // Set up a timeout function to clear Local Storage at the target time
-// setTimeout(function() {
-//   localStorage.clear();
-// }, timeUntilClear);
-
-
-
-
-
-
-
 
 
 // localStorage.clear();
