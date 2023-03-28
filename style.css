@@ -245,6 +245,7 @@ box-shadow: #2e2d9269;
     transition: 1s;
  font-family: 'Roboto' ,sans-serif;
  margin-left: 10px;
+ font-size: 20px;
 }
 .counter1:hover{
 
