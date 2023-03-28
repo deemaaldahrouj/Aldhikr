@@ -78,10 +78,17 @@ function click1(obj)
   
 
 
+  function showAlert() {
+    document.getElementById("customAlertBox").style.display = "block"; // Show the custom alert box
+  }
 
+  function showAlert1() {
+    document.getElementById("customAlertBox1").style.display = "block"; // Show the custom alert box
+  }
 function cl(obj){
-    if(window.localStorage.getItem("num")>=200)
-    {alert(" لقد اتممت الذكر تقبل الله ❤️")
+    if(window.localStorage.getItem("num")>=4)
+    { showAlert();
+      // alert(" لقد اتممت الذكر تقبل الله ❤️")
     for (const counter of counters) {
       counter.innerHTML=0;
       window.localStorage.setItem("num",0); 
@@ -92,7 +99,7 @@ function cl(obj){
         document.getElementById("b").className = "counter1";
 
        
-    
+    document.getElementById("reset").innerHTML="Reset";
     
     
      num.textContent=0;
@@ -101,9 +108,17 @@ function cl(obj){
     }
      
     else
-    {alert("عذرا انك لم تكمل هدف الذكر و هو 100 تسبيحة على الاقل");
+    {showAlert1();
     obj.innerHTML="اتممت الذكر";
 }
+}
+
+function closeAlert() {
+  document.getElementById("customAlertBox").style.display = "none"; // Hide the custom alert box
+}
+
+function closeAlert1() {
+  document.getElementById("customAlertBox1").style.display = "none"; // Hide the custom alert box
 }
 // Retrieve stored values from localStorage and update button innerHTML
 for (const counter of counters) {

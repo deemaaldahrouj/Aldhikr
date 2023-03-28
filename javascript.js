@@ -94,4 +94,7 @@ function daily()
 	}
 
 }
+
+
+
 daily();
