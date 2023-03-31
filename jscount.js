@@ -57,7 +57,7 @@ function click1(obj)
     document.getElementById("customAlertBox1").style.display = "block"; // Show the custom alert box
   }
 function cl(obj){
-    if(window.localStorage.getItem("num")>=100)
+    if(window.localStorage.getItem("num")>=300)
     { showAlert();
       // alert(" لقد اتممت الذكر تقبل الله ❤️")
     for (const counter of counters) {
